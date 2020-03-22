@@ -1,0 +1,31 @@
+{
+  "name": "koa-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "client-install": "cnpm install --prefix client",
+    "client": "npm start --prefix client",
+    "start": "node app.js",
+    "serve": "nodemon app.js",
+    "dev": "concurrently \"npm run serve\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "gravatar": "^1.8.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^8.0.7",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.8.11",
+    "passport-jwt": "^4.0.0",
+    "validator": "^12.2.0"
+  },
+  "devDependencies": {
+    "koa-passport": "^4.1.3"
+  }
+}
